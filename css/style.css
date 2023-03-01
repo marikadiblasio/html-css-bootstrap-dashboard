@@ -1,0 +1,20 @@
+.debug {
+    border: 1px solid red;
+}
+header {
+    height: 80px;
+}
+/* Parte centrale */
+.ms-wrapper {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+
+}
+/* Parte centrale latelare */
+#ms-sidebar {
+    width: 180px;
+}
+.ms-h-120px {
+    height: 120px;
+}
+/* Parte centrale principale */
