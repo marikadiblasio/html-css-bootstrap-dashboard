@@ -15,8 +15,23 @@
     <!-- Parte centrale intera -->
     <div class="ms-wrapper d-flex debug">
         <!-- Parte centrale laterale -->
-        <nav id="ms-sidebar" class="debug text-white flex-shrink-0 h-100">sidebar
-            <div class="ms-h120px+debug"></div>
+        <nav id="ms-sidebar" class="debug text-white  d-flex flex-column flex-shrink-0 h-100">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid me-1 fa-house"></i><span class="d-none d-md-inline">Home</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"><i class="fa-solid me-1 fa-chart-simple"></i><span class="d-none d-md-inline">Stats</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"><i class="fa-solid me-1 fa-signal"></i><span class="d-none d-md-inline">Signals</span></a>
+                </li>
+              </ul>
+            <ul class="ms-h120px mt-auto nav debug">
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid me-1 fa-gear"></i><span class="d-none d-md-inline">Admin</span></a>
+                </li>
+            </ul>
         </nav>
         <!-- Parte centrale principale -->
         <main class="h-100 flex-grow-1 overflow-y-auto">
@@ -59,11 +74,11 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th class="col-6" scope="col">Nome</th>
+                                            <th class="col-md-6 col-4" scope="col">Nome</th>
                                             <th class="col-2 d-none d-md-table-cell" scope="col">Data inizio</th>
-                                            <th class="col-1 text-uppercase" scope="col">Roi</th>
-                                            <th class="col-1" scope="col">Stato</th>
-                                            <th class="col-2 text-center" scope="col">Azioni</th>
+                                            <th class="col-1 d-none d-md-table-cell text-uppercase" scope="col">Roi</th>
+                                            <th class="col-md-1 col-4" scope="col">Stato</th>
+                                            <th class="col-md-2 col-4 text-center" scope="col">Azioni</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -72,9 +87,9 @@
                                                     <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
                                                     <span>Classe 75</span>
                                             </td>
-                                            <td class="col-2 d-none d-md-table-cell">15 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td>
+                                            <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td >
                                                 <span class="badge text-bg-success">Done</span>
                                             </td>
                                             <td class="text-center">
@@ -88,7 +103,7 @@
                                                     <span>Classe 76</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">16 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <span class="badge text-bg-success">Done</span>
                                             </td>
@@ -103,7 +118,7 @@
                                                     <span>Classe 77</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">17 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <span class="badge text-bg-warning">process</span>
                                             </td>
@@ -118,7 +133,7 @@
                                                     <span>Classe 78</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">18 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <span class="badge text-bg-success">Done</span>
                                             </td>
@@ -133,7 +148,7 @@
                                                     <span>Classe 79</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">19 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <span class="badge text-bg-danger">Failed</span>
                                             </td>
@@ -148,7 +163,7 @@
                                                     <span>Classe 80</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">20 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <span class="badge text-bg-success">Done</span>
                                             </td>
@@ -163,7 +178,7 @@
                                                     <span>Classe 81</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">21 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <span class="badge text-bg-danger">Failed</span>
                                             </td>
@@ -178,7 +193,7 @@
                                                     <span>Classe 82</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">22 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <span class="badge text-bg-success">Done</span>
                                             </td>

@@ -8,17 +8,19 @@
     font-size: .85rem!important;
 }
 header {
-    height: 80px;
+    height: 50px;
 }
 /* Parte centrale */
 .ms-wrapper {
-    margin-top: 80px;
-    height: calc(100vh - 80px);
+    margin-top: 50px;
+    height: calc(100vh - 50px);
 
 }
 /* Parte centrale latelare */
 #ms-sidebar {
     width: 180px;
+    background-color: #051e34;
+    background-image: url("../img/sidebar-bg.png");
 }
 .ms-h-120px {
     height: 120px;
@@ -27,4 +29,10 @@ header {
 .ms-small-square {
     width: 2rem;
     height: 2rem;
+}
+/* Responsive */
+@media screen and (max-width: 768px){
+    #ms-sidebar {
+        width: 50px;
+    }
 }
