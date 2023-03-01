@@ -1,6 +1,12 @@
 .debug {
     border: 1px solid red;
 }
+.ms-bg {
+    background-color: #165bba;
+}
+.ms-fs-xs{
+    font-size: .85rem!important;
+}
 header {
     height: 80px;
 }
