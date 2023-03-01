@@ -11,11 +11,30 @@
     <title>Dashboard</title>
 </head>
 <body class="bg-body-tertiary">
-    <header class="debug fixed-top">header</header>
+    <header class="fixed-top">
+        <nav class="bg-white d-flex align-items-center">
+            <div class="ms-w-50 d-md-none"><img src="./img/mobile-logo.png" alt="logo" class="img-fluid"></div>
+            <div class="ms-w-50 d-none d-md-block"><img src="./img/logo.svg" alt="logo" class="img-fluid"></div>
+            <!-- <div class="flex-grow-1 rounded bg-dark-subtle"> -->
+                <!-- <i class="fa-solid mx-2 fs-6 text-secondary fa-magnifying-glass"></i>
+                <input class="border-0 w-75 bg-body-tertiary" type="text" name="search" id="search" value="" placeholder="Prova a cercare: Lezioni di Laravel"> -->
+                <div class="input-group flex-grow-1 rounded bg-dark-subtle">
+                    <span class="input-group-text bg-dark-subtle"><i class="fa-solid mx-2 fs-6 text-secondary fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control bg-dark-subtle" placeholder="Prova a cercare: Lezioni di Laravel">
+                </div>
+            <!-- </div> -->
+            <div class="ms-w-50 me-auto text-center">
+                <i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-list-ul"></i>
+                <i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa fa-circle-question"></i>
+                <i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-ellipsis-vertical"></i>
+                <i class="fa-solid text-warning me-2 fs-4 fa-bell"></i>
+            </div>
+        </nav>
+    </header>
     <!-- Parte centrale intera -->
-    <div class="ms-wrapper d-flex debug">
+    <div class="ms-wrapper d-flex ">
         <!-- Parte centrale laterale -->
-        <nav id="ms-sidebar" class="debug text-white  d-flex flex-column flex-shrink-0 h-100">
+        <nav id="ms-sidebar" class="pt-4 text-white  d-flex flex-column flex-shrink-0 h-100">
             <ul class="nav flex-column">
                 <li class="nav-item">
                   <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid me-1 fa-house"></i><span class="d-none d-md-inline">Home</span></a>
@@ -27,7 +46,7 @@
                   <a class="nav-link text-white" href="#"><i class="fa-solid me-1 fa-signal"></i><span class="d-none d-md-inline">Signals</span></a>
                 </li>
               </ul>
-            <ul class="ms-h120px mt-auto nav debug">
+            <ul class="ms-h120px mt-auto nav ">
                 <li class="nav-item">
                     <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid me-1 fa-gear"></i><span class="d-none d-md-inline">Admin</span></a>
                 </li>
@@ -37,7 +56,7 @@
         <main class="h-100 flex-grow-1 overflow-y-auto">
             <!-- Aside blu -->
             <div id="aside" class="bg-primary text-white">
-                <div class="container-fluid pb-4 debug">
+                <div class="container-fluid pb-4 ">
                     <div class="row">
                         <div class="col-12 col-md-4 col-lg-2 mt-4 order-lg-3">
                             <span>Nuovo Studente</span>
