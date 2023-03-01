@@ -18,3 +18,7 @@ header {
     height: 120px;
 }
 /* Parte centrale principale */
+.ms-small-square {
+    width: 2rem;
+    height: 2rem;
+}
