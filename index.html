@@ -59,12 +59,12 @@
                 </div>
                 <div class="mb-3 col-12 col-lg-4">
                     <label  class="form-label">Stato</label>
-                        <select class="form-select" name="country" id="country">
-                            <option selected>Scegli...</option>
-                            <option value="it">Italia</option>
-                            <option value="fr">Francia</option>
-                            <option value="es">Spagna</option>
-                        </select>
+                    <select class="form-select" name="country" id="country">
+                        <option selected>Scegli...</option>
+                        <option value="it">Italia</option>
+                        <option value="fr">Francia</option>
+                        <option value="es">Spagna</option>
+                    </select>    
                 </div>
                 <div class="mb-3 col-12 col-lg-2">
                     <label for="input-cap" class="form-label text-uppercase">cap</label>
@@ -92,23 +92,19 @@
         <nav class="bg-white d-flex align-items-center">
             <div class="ms-w-50 flex-shrink-0 d-md-none"><img src="./img/mobile-logo.png" alt="logo" class="img-fluid"></div>
             <div class="ms-w-50 flex-shrink-0 d-none d-md-block"><img src="./img/logo.svg" alt="logo" class="img-fluid"></div>
-            <!-- <div class="flex-grow-1 rounded bg-dark-subtle"> -->
-                <!-- <i class="fa-solid mx-2 fs-6 text-secondary fa-magnifying-glass"></i>
-                <input class="border-0 w-75 bg-body-tertiary" type="text" name="search" id="search" value="" placeholder="Prova a cercare: Lezioni di Laravel"> -->
-                <div class="input-group flex-grow-1 rounded bg-dark-subtle">
-                    <span class="input-group-text bg-dark-subtle"><i class="fa-solid mx-2 fs-6 text-secondary fa-magnifying-glass"></i></span>
-                    <input type="text" class="form-control border-0 bg-dark-subtle" placeholder="Prova a cercare: Lezioni di Laravel">
-                </div>
-            <!-- </div> -->
+            <div class="input-group flex-grow-1 me-2 rounded bg-dark-subtle">
+                <span class="input-group-text bg-dark-subtle"><i class="fa-solid mx-2 fs-6 text-secondary fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control border-0 bg-dark-subtle" placeholder="Prova a cercare: Lezioni di Laravel">
+            </div>
             <div class="ms-w-50 me-auto flex-shrink-0 text-center">
                 <ul class="nav">
-                    <li class="nav-item">
-                    <a href="#" class="nav-link px-1"><i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-list-ul"></i></a>
+                    <li class="nav-item d-none d-md-inline-block">
+                        <a href="#" class="nav-link px-1"><i class="fa-solid text-secondary me-2 fs-4 fa-list-ul"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-md-inline-block">
                         <a href="#" class="nav-link px-1"><i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa fa-circle-question"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-md-inline-block">
                         <a href="#" class="nav-link px-1"><i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-ellipsis-vertical"></i></a>
                     </li>
                     <li class="nav-item dropdown">
@@ -117,7 +113,7 @@
                             <li><a class="dropdown-item" href="#">Profilo</a></li>
                             <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
-                          </ul>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -137,7 +133,7 @@
                 <li class="nav-item">
                   <a class="nav-link text-white" aria-current="page" role="button" href="#"><i class="fa-solid me-1 fa-signal"></i><span class="d-none d-md-inline">Signals</span></a>
                 </li>
-              </ul>
+            </ul>
             <ul class="ms-h120px mt-auto nav ">
                 <li class="nav-item">
                     <a class="nav-link text-white" role="button" aria-current="page" href="#"><i class="fa-solid me-1 fa-gear"></i><span class="d-none d-md-inline">Admin</span></a>
@@ -179,7 +175,7 @@
                     <div class="col-12 col-lg-8">
                         <div class="card mt-4">
                             <div class="card-header">
-                              <h2 class="fw-normal">Prossime Classi</h2>
+                               <h2 class="fw-normal">Prossime Classi</h2>
                             </div>
                             <div class="card-body">
                                 <table class="table small table-hover">
@@ -210,8 +206,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                    <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
-                                                    <span>Classe 76</span>
+                                                <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
+                                                <span>Classe 76</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">16 Feb 2021</td>
                                             <td class="d-none d-md-table-cell">20%</td>
@@ -225,8 +221,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                    <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
-                                                    <span>Classe 77</span>
+                                                <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
+                                                <span>Classe 77</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">17 Feb 2021</td>
                                             <td class="d-none d-md-table-cell">20%</td>
@@ -319,45 +315,45 @@
                         </div>
                         <div class="card mt-4">
                             <div class="card-header">
-                              <h2 class="fw-normal text-uppercase">F.A.Q.</h2>
+                               <h2 class="fw-normal text-uppercase">F.A.Q.</h2>
                             </div>
                             <div class="card-body">
                                 <div class="accordion" id="ms-accordion">
                                     <div class="accordion-item">
-                                      <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            <span>Come aggiungere un nuovo studente?</span>
-                                        </button>
-                                      </h2>
-                                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#ms-accordion">
-                                        <div class="accordion-body">
-                                            <span>Clicca sul + in alto nella sezione blu*</span>
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <span>Come aggiungere un nuovo studente?</span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#ms-accordion">
+                                            <div class="accordion-body">
+                                                <span>Clicca sul + in alto nella sezione blu*</span>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <div class="accordion-item">
-                                      <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                           <span>Come posso accedere alle informazioni del mio account?</span>
-                                        </button>
-                                      </h2>
-                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#ms-accordion">
-                                        <div class="accordion-body">
-                                            <span>Clicca sull'icona della campanella.</span>
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <span>Come posso accedere alle informazioni del mio account?</span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#ms-accordion">
+                                            <div class="accordion-body">
+                                                <span>Clicca sull'icona della campanella.</span>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <div class="accordion-item">
-                                      <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <span>Posso usare questa dashboard da mobile?</span>
-                                        </button>
-                                      </h2>
-                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#ms-accordion">
-                                        <div class="accordion-body">
-                                            <span>Sì</span>
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <span>Posso usare questa dashboard da mobile?</span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#ms-accordion">
+                                            <div class="accordion-body">
+                                                <span>Sì</span>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                 </div>
                             </div>
@@ -367,7 +363,7 @@
                     <div class="col-12 small col-lg-4">
                         <div class="card mt-4">
                             <div class="card-header">
-                              <h2 class="fw-normal">Todo</h2>
+                               <h2 class="fw-normal">Todo</h2>
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
@@ -395,8 +391,10 @@
                                 </li>
                                 <li class="list-group-item"><span>Gennaio: 1200</span></li>
                                 <li class="list-group-item"><span>Febbraio: 800</span></li>
-                                <li class="list-group-item py-3"><a href="#">Visualizza report approfondito</a></li>
-                              </ul>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#">Visualizza report approfondito</a>
+                            </div>
                         </div>
                     </div>
                 </div>
