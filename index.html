@@ -31,7 +31,7 @@
                     <label for="input-mail" class="form-label w-100">Email</label>
                     <div class="input-group ">
                         <span class="input-group-text" id="span-mail">@</span>
-                        <input type="email" class="form-control" id="input-mail" name="input-mail" aria-label="Username" aria-describedby="span-mail">
+                        <input type="email" class="form-control" id="input-mail" name="input-mail">
                     </div> 
                 </div>
                 <div class="mb-3 col-12 col-lg-6">
@@ -42,12 +42,12 @@
                     <label for="input-email" class="form-label w-100">Indirizzo <br> email</label>
                     <div class="input-group">
                         <span class="input-group-text" id="spanemail">@</span>
-                        <input type="email" class="form-control" id="input-email" name="input-email" aria-label="Username" aria-describedby="span-email">
+                        <input type="email" class="form-control" id="input-email" name="input-email">
                     </div> 
                 </div>
                 <div class="mb-3 col-12 col-lg-6 mt-auto">
-                    <label for="input-psw" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="input-psw" name="input-psw">
+                    <label for="input-psw2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="input-psw2" name="input-psw2">
                 </div>
                 <div class="mb-3 col-12">
                     <label for="input-address" class="form-label">Indirizzo</label>
@@ -59,8 +59,7 @@
                 </div>
                 <div class="mb-3 col-12 col-lg-4">
                     <label  class="form-label">Stato</label>
-                    <!-- <div id="cii" class="form-text text-black mb-2">Stato</div> -->
-                        <select class="form-select" name="country" id="country" aria-labelledby="cii">
+                        <select class="form-select" name="country" id="country">
                             <option selected>Scegli...</option>
                             <option value="it">Italia</option>
                             <option value="fr">Francia</option>
@@ -112,7 +111,6 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link px-1"><i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-ellipsis-vertical"></i></a>
                     </li>
-                    <div>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link px-1" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid text-warning me-2 fs-4 fa-bell"></i></a>
                         <ul class="dropdown-menu">
@@ -121,7 +119,6 @@
                             <li><a class="dropdown-item" href="#">Logout</a></li>
                           </ul>
                     </li>
-                </div>
                 </ul>
             </div>
         </nav>
@@ -155,7 +152,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-4 col-lg-2 mt-4 order-lg-3">
                             <span>Nuovo Studente</span>
-                            <button type="button" data-bs-toggle="offcanvas" href="#myoffcanvas" role="button" aria-controls="myoffcanvas" class="btn btn-lg btn-outline-light ms-2">+</button>
+                            <a type="button" data-bs-toggle="offcanvas" href="#myoffcanvas" role="button" aria-controls="myoffcanvas" class="btn btn-lg btn-outline-light ms-2">+</a>
                         </div>
                         <div class="col-12 col-sm-4 col-lg-6 mt-4 order-lg-1">
                             <h2 class="display-6 fw-medium">Boolean <span class="badge fw-normal ms-fs-xs ms-bg rounded-pill">Piano blaze</span></h2>
@@ -379,11 +376,11 @@
                                         <label class="form-check-label" for="kickoff">Kickoff nuove classi</label>
                                     </li>
                                     <li class="list-group-item">
-                                        <input class="form-check-input" type="checkbox" value=""name="lezione"  id="lezione">
+                                        <input class="form-check-input" type="checkbox" value="" name="lezione"  id="lezione">
                                         <label class="form-check-label" for="lezione">Lezione su Bootstrap 5 classe #75</label>
                                     </li>
                                     <li class="list-group-item">
-                                        <input class="form-check-input" type="checkbox" value=""name="name-check"  id="name-check">
+                                        <input class="form-check-input" type="checkbox" value="" name="name-check"  id="name-check">
                                         <label class="form-check-label" for="name-check">Controllare username Github studenti</label>
                                     </li>
                                 </ul>
