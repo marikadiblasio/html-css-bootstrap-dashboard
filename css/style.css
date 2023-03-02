@@ -42,3 +42,13 @@ header {
         width: 140px;
     }
 }
+@media screen and (min-width: 992px) {
+    .offcanvas.w-100.offcanvas-end {
+        width: 50%!important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .offcanvas.w-100.offcanvas-end {
+        width: 40%!important;
+    }
+}

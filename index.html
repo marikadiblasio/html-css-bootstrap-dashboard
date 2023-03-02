@@ -11,6 +11,84 @@
     <title>Dashboard</title>
 </head>
 <body class="bg-body-tertiary">
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end overflow-y-auto w-100" tabindex="-1" id="myoffcanvas" aria-labelledby="myoffcanvas-label">
+        <div class="offcanvas-header">
+           <h5 class="offcanvas-title" id="myoffcanvas-label">Inserisci un nuovo studente</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body container-fluid">
+            <form class="row align-content-end">
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="input-name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="input-name" name="input-name">
+                </div>
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="input-lastname" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="input-lastname" name="input-lastname">
+                </div>
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="input-mail" class="form-label w-100">Email</label>
+                    <div class="input-group ">
+                        <span class="input-group-text" id="span-mail">@</span>
+                        <input type="email" class="form-control" id="input-mail" name="input-mail" aria-label="Username" aria-describedby="span-mail">
+                    </div> 
+                </div>
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="input-psw" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="input-psw" name="input-psw">
+                </div>
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="input-email" class="form-label w-100">Indirizzo <br> email</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="spanemail">@</span>
+                        <input type="email" class="form-control" id="input-email" name="input-email" aria-label="Username" aria-describedby="span-email">
+                    </div> 
+                </div>
+                <div class="mb-3 col-12 col-lg-6 mt-auto">
+                    <label for="input-psw" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="input-psw" name="input-psw">
+                </div>
+                <div class="mb-3 col-12">
+                    <label for="input-address" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" id="input-address" name="input-address">
+                </div>
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="input-city" class="form-label">Città</label>
+                    <input type="text" class="form-control" id="input-city" name="input-city">
+                </div>
+                <div class="mb-3 col-12 col-lg-4">
+                    <label  class="form-label">Stato</label>
+                    <!-- <div id="cii" class="form-text text-black mb-2">Stato</div> -->
+                        <select class="form-select" name="country" id="country" aria-labelledby="cii">
+                            <option selected>Scegli...</option>
+                            <option value="it">Italia</option>
+                            <option value="fr">Francia</option>
+                            <option value="es">Spagna</option>
+                        </select>
+                </div>
+                <div class="mb-3 col-12 col-lg-2">
+                    <label for="input-cap" class="form-label text-uppercase">cap</label>
+                    <input type="text" class="form-control" id="input-cap" name="input-cap">
+                </div>
+                <div class="mb-3 col-12">
+                    <label for="foto" class="form-label">Foto</label>
+                    <input class="form-control" type="file" id="foto">
+                </div>
+                <div class="mb-3 col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check" required>
+                        <label class="form-check-label" for="check"> Seleziona per proseguire</label>
+                    </div>
+                </div>
+                <div class="mb-3 col-auto">
+                    <button type="button" class="btn btn-primary">Salva</button>
+                    <button type="button" class="btn btn-warning">Svuota</button>
+                </div>
+                <!-- buttons 2 -->
+            </form>
+        </div>
+    </div>
     <header class="fixed-top pt-1">
         <nav class="bg-white d-flex align-items-center">
             <div class="ms-w-50 flex-shrink-0 d-md-none"><img src="./img/mobile-logo.png" alt="logo" class="img-fluid"></div>
@@ -35,8 +113,8 @@
                         <a href="#" class="nav-link px-1"><i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-ellipsis-vertical"></i></a>
                     </li>
                     <div>
-                    <li class="nav-item ">
-                        <a href="#" class="nav-link px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid text-warning me-2 fs-4 fa-bell"></i></a>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link px-1" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid text-warning me-2 fs-4 fa-bell"></i></a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Profilo</a></li>
                             <li><a class="dropdown-item" href="#">Fatturazione</a></li>
@@ -75,11 +153,11 @@
             <div id="aside" class="bg-primary text-white">
                 <div class="container-fluid pb-4 ">
                     <div class="row">
-                        <div class="col-12 col-md-4 col-lg-2 mt-4 order-lg-3">
+                        <div class="col-12 col-sm-4 col-lg-2 mt-4 order-lg-3">
                             <span>Nuovo Studente</span>
-                            <!-- Aggiuntere il + con offcanvas -->
+                            <button type="button" data-bs-toggle="offcanvas" href="#myoffcanvas" role="button" aria-controls="myoffcanvas" class="btn btn-lg btn-outline-light ms-2">+</button>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-6 mt-4 order-lg-1">
+                        <div class="col-12 col-sm-4 col-lg-6 mt-4 order-lg-1">
                             <h2 class="display-6 fw-medium">Boolean <span class="badge fw-normal ms-fs-xs ms-bg rounded-pill">Piano blaze</span></h2>
                             <div>
                                 <span class="badge fw-normal ms-fs-xs ms-bg rounded-pill">3 App</span>
@@ -90,7 +168,7 @@
                                 <span class="badge d-none d-lg-inline fw-normal ms-fs-xs ms-bg rounded-pill">Boolean Blog App</span>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4 mt-4 mb-4 lh-lg order-lg-2">
+                        <div class="col-12 col-sm-4 col-lg-4 mt-4 mb-4 lh-lg order-lg-2">
                             <span>Studenti online negli ultimi 30 minuti</span>
                             <div><span class="display-6">125</span></div>
                         </div>
@@ -107,7 +185,7 @@
                               <h2 class="fw-normal">Prossime Classi</h2>
                             </div>
                             <div class="card-body">
-                                <table class="table table-hover">
+                                <table class="table small table-hover">
                                     <thead>
                                         <tr>
                                             <th class="col-md-6 col-4" scope="col">Nome</th>
@@ -120,8 +198,8 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                    <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
-                                                    <span>Classe 75</span>
+                                                <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
+                                                <span>Classe 75</span>
                                             </td>
                                             <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                             <td class="d-none d-md-table-cell">20%</td>
@@ -156,7 +234,7 @@
                                             <td class="col-2 d-none d-md-table-cell">17 Feb 2021</td>
                                             <td class="d-none d-md-table-cell">20%</td>
                                             <td>
-                                                <span class="badge text-bg-warning">process</span>
+                                                <span class="badge text-white text-bg-warning">process</span>
                                             </td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
@@ -165,8 +243,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                    <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
-                                                    <span>Classe 78</span>
+                                                <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
+                                                <span>Classe 78</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">18 Feb 2021</td>
                                             <td class="d-none d-md-table-cell">20%</td>
@@ -180,8 +258,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                    <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
-                                                    <span>Classe 79</span>
+                                                <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
+                                                <span>Classe 79</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">19 Feb 2021</td>
                                             <td class="d-none d-md-table-cell">20%</td>
@@ -195,8 +273,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                    <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
-                                                    <span>Classe 80</span>
+                                                <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
+                                                <span>Classe 80</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">20 Feb 2021</td>
                                             <td class="d-none d-md-table-cell">20%</td>
@@ -210,8 +288,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                    <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
-                                                    <span>Classe 81</span>
+                                                <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
+                                                <span>Classe 81</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">21 Feb 2021</td>
                                             <td class="d-none d-md-table-cell">20%</td>
@@ -225,8 +303,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                    <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
-                                                    <span>Classe 82</span>
+                                                <img class="ms-small-square rounded-circle" src="./img/class-avatar.jpg" alt="logo">
+                                                <span>Classe 82</span>
                                             </td>
                                             <td class="col-2 d-none d-md-table-cell">22 Feb 2021</td>
                                             <td class="d-none d-md-table-cell">20%</td>
@@ -289,26 +367,26 @@
                         </div>
                     </div>
                     <!-- Todo e grafico -->
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 small col-lg-4">
                         <div class="card mt-4">
                             <div class="card-header">
                               <h2 class="fw-normal">Todo</h2>
                             </div>
                             <div class="card-body">
-                                <form class="form-control">
-                                    <div class="form-check border-bottom">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
                                         <input class="form-check-input " type="checkbox" name="kickoff" value="" id="kickoff">
                                         <label class="form-check-label" for="kickoff">Kickoff nuove classi</label>
-                                    </div>
-                                    <div class="form-check border-bottom">
+                                    </li>
+                                    <li class="list-group-item">
                                         <input class="form-check-input" type="checkbox" value=""name="lezione"  id="lezione">
                                         <label class="form-check-label" for="lezione">Lezione su Bootstrap 5 classe #75</label>
-                                    </div>
-                                    <div class="form-check border-bottom">
+                                    </li>
+                                    <li class="list-group-item">
                                         <input class="form-check-input" type="checkbox" value=""name="name-check"  id="name-check">
                                         <label class="form-check-label" for="name-check">Controllare username Github studenti</label>
-                                    </div>
-                                </form>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="card mt-4 mb-5">
