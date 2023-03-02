@@ -11,23 +11,40 @@
     <title>Dashboard</title>
 </head>
 <body class="bg-body-tertiary">
-    <header class="fixed-top">
+    <header class="fixed-top pt-1">
         <nav class="bg-white d-flex align-items-center">
-            <div class="ms-w-50 d-md-none"><img src="./img/mobile-logo.png" alt="logo" class="img-fluid"></div>
-            <div class="ms-w-50 d-none d-md-block"><img src="./img/logo.svg" alt="logo" class="img-fluid"></div>
+            <div class="ms-w-50 flex-shrink-0 d-md-none"><img src="./img/mobile-logo.png" alt="logo" class="img-fluid"></div>
+            <div class="ms-w-50 flex-shrink-0 d-none d-md-block"><img src="./img/logo.svg" alt="logo" class="img-fluid"></div>
             <!-- <div class="flex-grow-1 rounded bg-dark-subtle"> -->
                 <!-- <i class="fa-solid mx-2 fs-6 text-secondary fa-magnifying-glass"></i>
                 <input class="border-0 w-75 bg-body-tertiary" type="text" name="search" id="search" value="" placeholder="Prova a cercare: Lezioni di Laravel"> -->
                 <div class="input-group flex-grow-1 rounded bg-dark-subtle">
                     <span class="input-group-text bg-dark-subtle"><i class="fa-solid mx-2 fs-6 text-secondary fa-magnifying-glass"></i></span>
-                    <input type="text" class="form-control bg-dark-subtle" placeholder="Prova a cercare: Lezioni di Laravel">
+                    <input type="text" class="form-control border-0 bg-dark-subtle" placeholder="Prova a cercare: Lezioni di Laravel">
                 </div>
             <!-- </div> -->
-            <div class="ms-w-50 me-auto text-center">
-                <i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-list-ul"></i>
-                <i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa fa-circle-question"></i>
-                <i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-ellipsis-vertical"></i>
-                <i class="fa-solid text-warning me-2 fs-4 fa-bell"></i>
+            <div class="ms-w-50 me-auto flex-shrink-0 text-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                    <a href="#" class="nav-link px-1"><i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-list-ul"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-1"><i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa fa-circle-question"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-1"><i class="fa-solid text-secondary d-none d-md-inline me-2 fs-4 fa-ellipsis-vertical"></i></a>
+                    </li>
+                    <div>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid text-warning me-2 fs-4 fa-bell"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                          </ul>
+                    </li>
+                </div>
+                </ul>
             </div>
         </nav>
     </header>
@@ -35,20 +52,20 @@
     <div class="ms-wrapper d-flex ">
         <!-- Parte centrale laterale -->
         <nav id="ms-sidebar" class="pt-4 text-white  d-flex flex-column flex-shrink-0 h-100">
-            <ul class="nav flex-column">
+            <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid me-1 fa-house"></i><span class="d-none d-md-inline">Home</span></a>
+                  <a class="nav-link text-white" role="button" aria-current="page" href="#"><i class="fa-solid me-1 fa-house"></i><span class="d-none d-md-inline">Home</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#"><i class="fa-solid me-1 fa-chart-simple"></i><span class="d-none d-md-inline">Stats</span></a>
+                  <a class="nav-link text-white" aria-current="page" role="button" href="#"><i class="fa-solid me-1 fa-chart-simple"></i><span class="d-none d-md-inline">Stats</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#"><i class="fa-solid me-1 fa-signal"></i><span class="d-none d-md-inline">Signals</span></a>
+                  <a class="nav-link text-white" aria-current="page" role="button" href="#"><i class="fa-solid me-1 fa-signal"></i><span class="d-none d-md-inline">Signals</span></a>
                 </li>
               </ul>
             <ul class="ms-h120px mt-auto nav ">
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid me-1 fa-gear"></i><span class="d-none d-md-inline">Admin</span></a>
+                    <a class="nav-link text-white" role="button" aria-current="page" href="#"><i class="fa-solid me-1 fa-gear"></i><span class="d-none d-md-inline">Admin</span></a>
                 </li>
             </ul>
         </nav>
